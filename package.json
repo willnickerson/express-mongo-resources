@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "MONGODB_URI=mongodb://localhost/notes-test mocha"
+    "pretest": "npm run lint",
+    "test": "MONGODB_URI=mongodb://localhost/notes-test mocha",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
